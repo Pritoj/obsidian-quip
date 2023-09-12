@@ -244,7 +244,7 @@ export class QuipAPIClient {
         if (postArguments) {
             options.method = RequestMethod.POST;
             options.body = new URLSearchParams(postArguments).toString();
-            options.contentType = 'application/x-www-form-urlencoded';
+            options.contentType = 'multipart/form-data';
         }
         return options;
     }
